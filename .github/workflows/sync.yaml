@@ -22,8 +22,7 @@ jobs:
         run: echo ${{ secrets.ALIYUNCS_HUB_ACCESS_TOKEN }} | docker login crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com -u ${{ secrets.ALIYUNCS_HUB_USERNAME }} --password-stdin
 
       - name: "执行同步脚本"
-        run: |
-          ./n9e-edge/dockerfile/install.sh
+        run: ./sync.sh
 
       - name: "清理临时凭证"
         run: rm -rf /home/runner/.docker/config.json
