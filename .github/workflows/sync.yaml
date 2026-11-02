@@ -1,0 +1,28 @@
+name: "同步镜像"
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "30 6 * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "构建 Docker 镜像..."
+
+      - name: "获取项目文件"
+        uses: actions/checkout@v7
+
+      - name: "获取当前工作目录"
+        run: ls -la
+
+      - name: "登录阿里云容器镜像服务"
+        run: echo ${{ secrets.ALIYUNCS_HUB_ACCESS_TOKEN }} | docker login crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com -u ${{ secrets.ALIYUNCS_HUB_USERNAME }} --password-stdin
+
+      - name: "执行同步脚本"
+        run: ./sync.sh
+
+      - name: "清理临时凭证"
+        run: rm -rf /home/runner/.docker/config.json

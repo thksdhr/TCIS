@@ -1,0 +1,20 @@
+# n9e 部分
+redis:7.0-alpine -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/redis:7.0-alpine
+victoriametrics/victoria-metrics:latest -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/victoriametrics.victoria-metrics:latest
+victoriametrics/vmauth:latest -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/victoriametrics.vmauth:latest
+
+# 雷池部分
+huangtao1996/report:latest -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/huangtao1996.report:latest
+
+# nginx 主要版本
+nginx:latest -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:latest
+nginx:stable -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable
+nginx:stable-perl -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-perl
+nginx:stable-otel -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-otel
+nginx:stable-trixie -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-trixie
+nginx:stable-trixie-perl -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-trixie-perl
+nginx:stable-trixie-otel -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-trixie-otel
+nginx:stable-alpine -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-alpine
+nginx:stable-alpine-perl -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-alpine-perl
+nginx:stable-alpine-slim -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-alpine-slim
+nginx:stable-alpine-otel -> crpi-nb4joqb2ycvq3qqu.cn-chengdu.personal.cr.aliyuncs.com/tsync/nginx:stable-alpine-otel
